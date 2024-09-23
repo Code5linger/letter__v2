@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+  font-family: 'Alegreya', serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background: linear-gradient(to left, #ffe1d1 0%, #ffdbca 100%);
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.header-logo {
+  align-self: center;
+  justify-self: center;
+}
+
+.header-letter {
+  font-size: 30px;
+  color: #6a4a39;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+
+  list-style: none;
+  opacity: 0.7;
+  margin: 0;
+
+  &-item {
+    margin: 0 47px;
+  }
+}
+
+.menu-item:last-of-type {
+  color: #ff7676;
+  border-bottom: 4px solid #f8d1be;
+}
