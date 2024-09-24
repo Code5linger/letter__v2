@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap");
+body {
+  font-family: Alegreya;
+  font-size: 20px;
+  margin: 0 auto;
+  background: linear-gradient(to left, #ffe1d1 0%, #ffdbca 100%);
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+}
+
+.header-logo {
+  justify-self: center;
+  align-self: center;
+}
+
+.header-text {
+  font-family: Alegreya;
+  font-size: 30px;
+  font-weight: bolder;
+  line-height: 40.83px;
+  text-align: left;
+  color: #6a4a39;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  font-weight: bold;
+  align-items: center;
+  opacity: 0.7;
+}
+.menu-item {
+  margin: 0 47px;
+}
+
+.menu-item:last-of-type {
+  color: #ff7676;
+  border-bottom: 4px solid #ff7676;
+}
+
+/*# sourceMappingURL=style.css.map */
