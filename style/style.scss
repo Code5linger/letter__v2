@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
+
+$gradient-color-1: #ffe1d1;
+$gradient-color-2: #ffdbca;
+$nav-last-item: #ff7676;
+$nav-last-item-border: #f8d1be;
+
+body {
+  font-family: 'Alegreya', system-ui;
+  background: linear-gradient(to left, $gradient-color-1, $gradient-color-2);
+}
+
+.container {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  font-weight: bold;
+}
+
+.logo {
+  justify-self: center;
+  align-self: center;
+}
+
+.header-text {
+  font-size: 1.875rem;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  font-size: 1.25rem;
+  opacity: 0.7;
+  &-item {
+    margin: 0 43px;
+  }
+}
+
+.menu :last-of-type {
+  color: $nav-last-item;
+  border-bottom: 4px solid $nav-last-item-border;
+}
