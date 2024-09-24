@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap");
+/*
+Box 
+  Position
+  Display
+  Width
+  Margin
+
+Text
+Background
+Other (Alphabetically )
+
+Content
+Padding 
+Border 
+Margin
+*/
+:root {
+  --color-1: #ffe1d1;
+  --color-2: #ffdbca;
+  --color-3: #6a4a39;
+  --color-4: #f8d1be;
+  --color-5: #ff7676;
+}
+
+body {
+  background: linear-gradient(to left, #ffe1d1, #ffdbca);
+  font-family: "Alegreya", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.header-logo {
+  align-self: center;
+  justify-self: center;
+}
+
+.letters {
+  font-size: 30px;
+  color: var(--color-3);
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  opacity: 0.7;
+  list-style: none;
+}
+.menu-item {
+  margin: 0 47px;
+}
+
+.menu :last-of-type {
+  color: var(--color-5);
+  border-bottom: 4px solid var(--color-4);
+}
+
+/*# sourceMappingURL=style.css.map */
