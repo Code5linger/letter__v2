@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+  font-family: 'Alegreya', system-ui;
+  font-weight: bold;
+  margin: 0 auto;
+
+  background: linear-gradient(to left, #ffe1d1 0%, #ffdbca 100%);
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+}
+
+.logo {
+  align-self: center;
+  justify-self: center;
+  font-size: 30px;
+  color: #6a4a39;
+}
+
+.menu {
+  display: flex;
+  justify-self: flex-end;
+  align-items: center;
+  list-style: none;
+  font-size: 20px;
+  opacity: 0.7;
+  &-item {
+    margin: 0 47px;
+  }
+}
+
+.menu-item:last-of-type {
+  color: #ff7676;
+  border-bottom: 4px solid #f8d1be;
+}
+
+.hero_section {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, minmax(0px, auto));
+  grid-template-areas:
+    'lamp title sun sun'
+    'lamp title sun sun';
+  height: 550px;
+}
+
+#lamp {
+  position: absolute;
+  bottom: -350px;
+  grid-area: lamp;
+}
+
+#waves {
+  grid-row: 2/2;
+  grid-column: 1/5;
+  max-width: 1500px;
+  width: 100%;
+  align-self: end;
+  justify-self: end;
+}
+
+.hero_cta {
+  grid-area: title;
+  align-self: center;
+}
+
+.sun_container {
+  grid-area: sun;
+  justify-self: start;
+  align-self: end;
+  img {
+    max-width: 400px;
+    min-width: 200px;
+  }
+}
+
+#planes {
+  grid-area: sun;
+  justify-self: end;
+  align-self: end;
+}
