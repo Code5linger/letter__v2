@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+  --brand-color-gray: #6a4a39;
+  --brand-color-dark-gray: #ffa3941a;
+  --brand-color-2: #ff7676;
+  --brand-color-3: #f8d1be;
+
+  --bg-color-1: #ffe1d1;
+  --bg-color-2: #ffdbca;
+  --black: #000000;
+  --white: #ffffff;
+
+  --text-color-h1: #3f342f;
+  --text-color-p: #333333;
+
+  --text-size-h1: 60px;
+  --text-size-h2: 30px;
+  --text-size-p: 20px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  font-family: 'Alegreya', serif;
+  font-size: var(--text-size-p);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-section {
+  background: linear-gradient(
+    180deg,
+    var(--bg-color-1) 0%,
+    var(--bg-color-2) 100%
+  );
+  padding-top: 2rem;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  align-items: center;
+  font-weight: bold;
+  /* justify-items: center; */
+}
+
+.logo-text {
+  font-size: var(--text-size-h2);
+  color: var(--brand-color-gray);
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu * + * {
+  margin-left: 75px;
+}
+
+.menu li {
+  color: var(--black);
+  opacity: 0.7;
+}
+
+.menu li:last-of-type {
+  color: var(--brand-color-2);
+  border-bottom: 4px solid var(--brand-color-3);
+}
+
+.hero-container {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, minmax(0, auto));
+  grid-template-areas:
+    'lamp cta sun sun'
+    'lamp cta sun sun';
+}
+
+.wave {
+  grid-row: 1/2;
+  grid-column: 1/5;
+  width: 100%;
+}
+
+.lamp {
+  position: absolute;
+  grid-area: lamp;
+  width: 100%;
+  bottom: -350px;
+}
+
+.cta {
+  position: absolute;
+  grid-area: cta;
+
+  display: flex;
+  flex-direction: column;
+  bottom: -20px;
+  gap: 20px;
+}
+
+.cta h1 {
+  font-size: var(--text-size-h1);
+  line-height: 1;
+  margin: 0;
+}
+
+.cta button {
+  max-width: 200px;
+  font-family: 'Alegreya', serif;
+  font-size: var(--text-size-p);
+  color: var(--white);
+  text-align: center;
+  background: var(--text-color-p);
+  cursor: pointer;
+  box-shadow: 0px 5px 10px 0px var(--brand-color-dark-gray);
+
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.sun {
+  grid-area: sun;
+  justify-items: start;
+  align-self: flex-end;
+  max-width: 400px;
+  min-width: 200px;
+}
+
+.plane {
+  grid-area: sun;
+  justify-items: start;
+  align-self: flex-end;
+}
